@@ -1,10 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
+  base: '/Vertuallr/', // Base path, must match the repository name
   plugins: [react()],
-  build: {
-    outDir: 'build'  // This will make Vite output the build to the 'build' folder
-  }
-})
+});
